@@ -74,7 +74,7 @@ runs()
         })
     });
 
-async function runs() {
+/*async function runs() {
     // Object.keys(list).map(a => delete list[a].only)
     req.headers = formatHeaders(req.headers); //compatible with HTTP/2
     const appID = req.url.split(/\/apps\/(\d+)/)[1];
@@ -104,7 +104,7 @@ async function runs() {
     if (!rsp.body) {
         await QueryFallback(!other && appList[appID]);
     }
-}
+}*/
 
 function SaveAccount(id, part, o) {
     if (!list[id]) {
