@@ -74,7 +74,7 @@ runs()
         })
     });
 
-/*async function runs() {
+async function runs() {
     // Object.keys(list).map(a => delete list[a].only)
     req.headers = formatHeaders(req.headers); //compatible with HTTP/2
     const appID = req.url.split(/\/apps\/(\d+)/)[1];
@@ -94,7 +94,7 @@ runs()
         }
     } else if (/\/install$/.test(req.url) && req.body) {
         req.body = JSON.parse(req.body);
-        req.body.storefrontId = '143380-1,29'; //prevent regional restrictions
+        req.body.storefrontId = '143441-19,29'; //prevent regional restrictions
         req.body = $.stringify(req.body);
     } else if (/\d+\/eula$/.test(req.url)) {
         rsp.body = $.stringify(ShareAccount(appID, build));
@@ -104,7 +104,7 @@ runs()
     if (!rsp.body) {
         await QueryFallback(!other && appList[appID]);
     }
-}*/
+}
 
 function SaveAccount(id, part, o) {
     if (!list[id]) {
